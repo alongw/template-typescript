@@ -6,7 +6,7 @@
 
 -   Prettierrc 格式化代码
 -   Eslint 语法检查（目前会警告，因为不支持当前版本的 TypeScript ）
--   Git Commit 语法检测和辅助编写
+-   Git Commit 语法检查和辅助编写
 -   更好的打包
 
 ### Prettierrc 格式化代码
