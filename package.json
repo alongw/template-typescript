@@ -9,8 +9,8 @@
     "scripts": {
         "prepare": "husky install",
         "cz": "git-cz",
-        "pushall": "git add . && yarn cz && git push",
-        "push": "yarn cz && git push",
+        "pushall": "yarn lint && git add . && yarn cz && git push",
+        "push": "yarn lint && yarn cz && git push",
         "lint": "eslint .",
         "format": "prettier --write --cache .",
         "start": "yarn lint && npx ts-node src/app.ts",
