@@ -1,6 +1,6 @@
 # TypeScript 项目模板
 
-基于 [template-ts](https://github.com/ltfei-blog/template-ts) 二次修改
+基于 [template-ts](https://github.com/ltfei-blog/template-ts) 二次开发
 
 ## 功能
 
