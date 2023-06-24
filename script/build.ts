@@ -51,6 +51,9 @@ shell.exec('tsc')
 // 复制 public 文件夹到 dist/tsc 目录（包括文件夹本身）
 copyFolder('public', 'dist/tsc/public')
 
+// 复制 src/public 文件夹到 dist/tsc 目录（包括文件夹本身）
+copyFolder('src/public', 'dist/tsc/public')
+
 // 复制 tsc 文件夹中的文件到 dist/code 目录
 copyFolderFiles('dist/tsc', 'dist/code')
 
