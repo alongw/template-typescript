@@ -29,6 +29,10 @@
 
 使用 `yarn cz` 来调用 git-cz 进行问答式提交
 
+使用 `yarn push` 来调用 git-cz 进行问答式提交并提交至远程仓库
+
+使用 `yarn pushall` 来调用 git-cz 进行问答式提交并将所有修改的文件提交至远程仓库
+
 ```bash
 git add .
 yarn cz
