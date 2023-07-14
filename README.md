@@ -76,3 +76,7 @@ Node 版本：18
 安装依赖命令：yarn install
 
 构建命令：yarn build
+
+### 开源协议
+
+默认采用 GNU Affero General Public License v3.0 （AGPL-3.0） 协议
