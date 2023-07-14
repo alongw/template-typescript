@@ -25,7 +25,7 @@
 
 ### Git Commit 语法检测和辅助编写
 
-使用 [husky](https://github.com/typicode/husky) + [commitizen](https://github.com/commitizen/cz-cli) + [lint-staged](https://github.com/okonet/lint-staged) 规范化 Git Commit
+使用 [husky](https://github.com/typicode/husky) + [commitizen](https://github.com/commitizen/cz-cli) + [lint-staged](https://github.com/okonet/lint-staged) 规范化 Git Commit ，代码提交需符合相关规范
 
 使用 `yarn cz` 来调用 git-cz 进行问答式提交
 
@@ -49,15 +49,30 @@ git push
 -   将 `/src` 下所有文件打包至 `/dist/tsc`
 -   将项目根目录下 `/public` 以及 src 目录下 `/src/public` 文件夹完整复制到 `/dist/code`
 -   将刚刚打包好 `/dist/tsc` 目录下所有文件复制到 `/dist/code`
+-   将项目根目录下 `/template` 目录复制到 `/dist/code/template`
 -   将 `/dist/file` 目录下所有文件复制到 `/dist/code` （如果有）
--   将根目录下 `package.json` 及 `yarn.lock` 复制到 `/dist/code` 目录下
+-   将根目录下 `package.json` 及 `yarn.lock` 还有 `LICENSE` 复制到 `/dist/code` 目录下
 
 打包后的最终代码将在 `/dist/code` 文件夹中
 
-## 其他打包命令
+### 其他打包命令
 
 使用 `yarn build:nolint` 来绕过 Eslint 语法检查直接打包
 
 使用 `yarn build:tsc` 来仅编译 `src` 目录下的文件
 
 使用 `yarn build:lint` 以方便在没有安装全局环境时打包
+
+### 自动部署
+
+配置 Github Actions 进行自动部署
+
+生效分支：main 主分支
+
+配置环境：Ubuntu-latest
+
+Node 版本：18
+
+安装依赖命令：yarn install
+
+构建命令：yarn build

@@ -57,11 +57,15 @@ copyFolder('src/public', 'dist/tsc/public')
 // 复制 tsc 文件夹中的文件到 dist/code 目录
 copyFolderFiles('dist/tsc', 'dist/code')
 
+// 复制 template 文件夹到 dist/code/template 目录（包括文件夹本身）
+copyFolder('template', 'dist/code/template')
+
 // 复制 file 文件夹中的文件到 dist/code 目录
 copyFolderFiles('dist/file', 'dist/code')
 
-// 复制 package.json 和 yarn.lock 文件到 dist/code 目录
+// 复制 package.json 和 yarn.lock 和 LICENSE 文件到 dist/code 目录
 shell.cp('package.json', 'dist/code/package.json')
 shell.cp('yarn.lock', 'dist/code/yarn.lock')
+shell.cp('LICENSE', 'dist/code/LICENSE')
 
 console.log('成功构建')
