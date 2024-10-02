@@ -1,18 +1,21 @@
 {
     "compilerOptions": {
         "allowJs": true,
-        "module": "commonjs",
+        "module": "ESNext",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "target": "esnext",
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist/tsc",
+        "outDir": "dist",
         "baseUrl": "src",
         "typeRoots": ["node_modules/@types"],
         "types": ["node"],
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "paths": {
+            "@/*": ["*"]
+        }
     },
     "include": ["src/**/*"]
 }
